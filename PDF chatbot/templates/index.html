@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Chatbot</title>
+</head>
+<body>
+
+    <h1>PDF Chatbot</h1>
+
+    <form method="POST"
+          action="/upload"
+          enctype="multipart/form-data">
+
+        <input type="file" name="pdf">
+
+        <button type="submit">
+            Upload PDF
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>Ask Question</h2>
+
+    <form method="POST" action="/ask">
+
+        <input type="text"
+               name="question"
+               placeholder="Ask about PDF">
+
+        <button type="submit">
+            Ask
+        </button>
+
+    </form>
+
+</body>
+</html>
